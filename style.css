@@ -1,0 +1,60 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: rgb(22, 19, 19);
+}
+
+main{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 10px;
+	
+}
+h1{
+	display: none;
+	background-color: rgb(7, 130, 231);
+	text-align: center;
+	position: fixed;
+	width: 100%;
+	padding: 15px;
+	animation: mymove 5s infinite;
+
+}
+
+iframe{
+
+	height: 200px;
+    width: 300px;
+    margin: 20px;
+    border: none;
+    box-shadow: 0 0 10px #ffffff59;
+    border-radius: 10px;
+}
+.buttons{
+	text-align: center;
+	margin: 10px;
+}
+span{
+	background-color: white;
+	border: none;
+	font-size: 25px;
+	border-radius: 10px;
+	
+	padding: 10px;
+	cursor: pointer;
+	transition: all 0.5s ease;
+}
+span:hover{
+	background-color: black;
+	color: white;
+}
+
+@keyframes mymove {
+	0% {top: 0px;}
+	50% {top: 500px;}
+	100%{top:0px;}
+  }
