@@ -166,12 +166,15 @@ loading.style.display = 'none'
 
 const mainElement = document.querySelector('main');
   function puttingThisInHtml(data){
-  
+  const card = document.createElement('article');
   const iFrame = document.createElement('iframe');
   iFrame.src = `https://www.youtube.com/embed/${data.videoId}`
-  mainElement.appendChild(iFrame);
+  card.appendChild(iFrame);
   iFrame.lazyLoading = true;
-
+    const h3 = document.createElement('h3');
+    h3.innerText = data.title;
+    card.appendChild(h3);
+    mainElement.appendChild(card)
   }
 
 // <iframe width="560" height="315" 

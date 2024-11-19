@@ -27,16 +27,29 @@ h1{
 
 iframe{
 
-	height: 200px;
-    width: 300px;
-    margin: 20px;
+width: 100%;
+object-fit: cover;
+
+   
     border: none;
-    box-shadow: 0 0 10px #ffffff59;
     border-radius: 10px;
+}
+article{
+	margin: 20px;
+	height: auto;
+    width: 300px;
+	object-fit: cover;
+	background:linear-gradient(225deg, red, black);
+	padding: 0px;
+	border-radius: 10px;
 }
 .buttons{
 	text-align: center;
-	margin: 10px;
+	margin: 30px;
+}
+h3{
+	color: white;
+	padding: 15px;
 }
 span{
 	background-color: white;
@@ -57,4 +70,25 @@ span:hover{
 	0% {top: 0px;}
 	50% {top: 500px;}
 	100%{top:0px;}
+  }
+  nav{
+	width: 100%;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+	box-shadow: 0 0 5px white;
+  }
+  img{
+	width:50px;
+  }
+  h2{
+	font-size: 35px;
+  }
+  footer{
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding: 20px;
+	margin: 5px;
   }
