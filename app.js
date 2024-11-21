@@ -152,7 +152,7 @@ fetchAllVideosExcludingShorts(uploadsPlaylistId)
   .then(allVideos => {
     storingVideos = allVideos;
     console.log(storingVideos.length)
-    storingVideos.filter( (d, i)=> i>bottomCounter && i<topCounter).map( i => puttingThisInHtml(i))
+    storingVideos.filter( (d, i)=> i>bottomCounter && i<topCounter && !d.title.includes('#')).map( i => puttingThisInHtml(i))
     
   })
   .catch(error => {
