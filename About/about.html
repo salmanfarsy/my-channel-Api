@@ -26,14 +26,20 @@
         </span>
         <span><strong><em>Contact:</em></strong> collegiatethegreat@gmail.com</span>
     </div>
-    <form action="#">
+    <form action="db16c0539047b5d528cecee8d1f11e8" method="POST">
         <h3>You Can Share Your Opinion</h3>
-        <label for="name">Name</label>
-        <input type="text" name="name">
-        <label for="email">Email</label>
-        <input type="email" name="email" >
+        <div class="input">
+            <label for="name">Name:</label>
+            <input type="text" name="name" placeholder="Enter Your Name" required>
+        </div>
+      <div class="input">
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" placeholder="Enter your E-mail" required>
+      </div>
+      <div class="input">
         <label for="opinion">Your Opinion</label>
         <textarea name="opinion" ></textarea>
+      </div>
         <button type="submit">Send</button>
     </form>
    </main>

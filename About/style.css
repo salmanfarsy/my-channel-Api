@@ -61,3 +61,42 @@ ul{
 em{
     color: #ffd700c7;
 }
+
+form{
+  margin: 10px;
+  padding: 10px;
+  background-color: rgba(255, 0, 0, 0.1);
+  width: 100%;
+}
+.input{
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+input{
+ 
+  margin: 10px;
+  padding: 10px;
+  color: white;
+  width: 30%;
+  background: no-repeat;
+  border: none;
+  border-bottom: 2px solid gold;
+}
+textarea{
+  margin: 10px;
+  height: 100px;
+  width: 200px;
+}
+
+
+button[type=submit]{
+	font-size: 25px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    background: #0f8719;
+    color: white;
+	cursor: pointer;
+}

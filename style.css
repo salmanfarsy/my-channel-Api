@@ -134,3 +134,12 @@ span:hover{
   a{
 	text-decoration: none;
   }
+button[submit]{
+	font-size: 25px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    background: #0f8719;
+    color: white;
+	cursor: pointer;
+}
