@@ -5,7 +5,7 @@
 	font-family: sans-serif;
 }
 body{
-background: linear-gradient(to left, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('cover.jpg');
+background: linear-gradient(to left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('cover.jpg');
 }
 footer{
 	background-color: black;
@@ -28,3 +28,36 @@ footer{
  nav img{
 	width:50px;
   }
+  main img{
+    width: 300px;
+  }
+  main{
+    display: flex ;
+        flex-direction: column;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+  }
+  .info{
+    width: 50%;
+    padding: 10px;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 4px 1px rgb(85, 85, 85);
+    border-radius: 5px;
+    word-spacing: 3px;
+    line-height: 40px;
+}
+.info span{
+    margin: 10px;
+    color: #2da6e1;
+}
+ul{
+    list-style: none;
+}
+em{
+    color: #ffd700c7;
+}
