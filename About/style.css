@@ -1,0 +1,30 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+body{
+background: linear-gradient(to left, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('cover.jpg');
+}
+footer{
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding: 20px;
+	margin: 5px;
+  }
+
+  nav{
+	width: 100%;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+	box-shadow: 0 0 5px white;
+	margin-bottom: 20px;
+	background: rgba(0, 0, 0, 0.301);
+  }
+ nav img{
+	width:50px;
+  }
