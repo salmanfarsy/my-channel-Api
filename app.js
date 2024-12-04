@@ -11,17 +11,21 @@
 
 
   const apiKey = 'AIzaSyBTrQxLnUKsFHR2IFoXcyHiUtrQtVKdR8M';
-
-// fetch(`https://www.googleapis.com/youtube/v3/channels?part=contentDetails&id=UClTWMnTaFQ8eyyPJQ4RK3XQ&key=AIzaSyBTrQxLnUKsFHR2IFoXcyHiUtrQtVKdR8M`)
-//    .then(response => response.json())
-//   .then(data => {
-//     const uploadsPlaylistId = data.items[0].contentDetails.relatedPlaylists.uploads;
-//     console.log('Uploads Playlist ID:', uploadsPlaylistId);
-//   })
-//   .catch(error => {
-//     console.error('Error fetching data:', error);
-//   });
-
+  fetch(`https://www.googleapis.com/youtube/v3/channels?part=statistics&id=UClTWMnTaFQ8eyyPJQ4RK3XQ&key=AIzaSyBTrQxLnUKsFHR2IFoXcyHiUtrQtVKdR8M`)
+  .then(response => response.json())
+  .then(data => {
+    if (data.items && data.items.length > 0) {
+      const subscriberCount = data.items[0].statistics.subscriberCount;
+      console.log(`Subscriber Count: ${subscriberCount}`);
+      const sub = document.querySelector('.sub');
+      sub.textContent = "Subscriber Count : " + subscriberCount + " & Need " + (1000-subscriberCount) + " More To Reach 1000 Subs!!! ";
+    } else {
+      console.log('No data found for the given channel ID.');
+    }
+  })
+  .catch(error => {
+    console.error('Error fetching data:', error);
+  });
 
 const uploadsPlaylistId = 'UUlTWMnTaFQ8eyyPJQ4RK3XQ'; // Replace with actual ID
 
